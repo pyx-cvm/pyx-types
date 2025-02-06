@@ -1,0 +1,13 @@
+[package]
+name = "pyx-types"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.81.0"
+
+[dependencies]
+oci-imgref = { git = "https://github.com/pyx-cvm/oci-imgref", branch = "main", features = ["serde"] }
+serde = { version = "1.0", features = ["derive"] }
+
+[dev-dependencies]
+serde_yml = "0.0"
+rstest = "0.17"
